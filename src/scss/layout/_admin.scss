@@ -22,3 +22,16 @@
         }
     }
 }
+
+.servicios{
+    @extend .citas;
+
+    .accioes{
+        margin: 0;
+
+    }
+    .boton,
+    .boton-eliminar{
+        margin: 0;
+    }
+}

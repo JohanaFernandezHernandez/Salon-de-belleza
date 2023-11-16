@@ -119,7 +119,7 @@ function paginaSiguiente(){
 
 async function consultarAPI(){
     try{
-        const url = 'http://localhost:8300/api/servicios';
+        const url = '/api/servicios';
         const resultado = await fetch(url);
         const servicios = await resultado.json();
         mostrarServicios(servicios);
@@ -345,7 +345,7 @@ function mostrarResumen(){
     // console.log([...datos]);
     try{
         //peticio hacia la API
-    const url = "http://localhost:8300/api/citas";
+    const url = "http:/api/citas";
     const respuesta = await fetch(url, {
         method: 'POST',
         body: datos
